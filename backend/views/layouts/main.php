@@ -39,6 +39,7 @@ AppAsset::register($this);
     ];
     if (Yii::$app->user->can('canAdmin')) {
         $menuItems[] = ['label' => 'Админка', 'url' => ['/user-contact']];
+        $menuItems[] = ['label' => 'Пользовательское соглашение', 'url' => ['/agreement']];
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav me-auto mb-2 mb-md-0'],
